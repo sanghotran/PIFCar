@@ -57,6 +57,9 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+void BlinkLed();
+void BlinkBuzzer();
+
 /* USER CODE END 0 */
 
 /**
@@ -145,6 +148,17 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void BlinkLed()
+{
+	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+}
+
+
+void BlinkBuzzer()
+{
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
+}
 
 /* USER CODE END 4 */
 

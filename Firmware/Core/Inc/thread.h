@@ -39,11 +39,6 @@ ThreadId_t UnRegisterThread(ThreadId_t );
 
 void OneMsTimerInterrup();
 
-void BlinkLed();
-void BlinkBuzzer();
-
-
-
 
 
 

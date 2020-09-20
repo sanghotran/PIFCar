@@ -61,16 +61,7 @@ void OneMsTimerInterrup()
 
 }
 
-void BlinkLed()
-{
-	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-}
 
-
-void BlinkBuzzer()
-{
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
-}
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
